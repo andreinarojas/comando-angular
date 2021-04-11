@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MiComponenteComponent } from './mi-componente/mi-componente.component';
+import { LetrasPipe } from './letras.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MiComponenteComponent
+    MiComponenteComponent,
+    LetrasPipe
   ],
   imports: [
     BrowserModule,

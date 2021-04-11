@@ -10,6 +10,7 @@ export class AppComponent {
   title2 = 'hola soy el segundo titulo';
   foods= ['Pollo', 'Pescado', 'Carne', 'Pastas'];
   foodName= '';
+  vector = [1,2,3,4,5,6,7];
 
   addFood (){
     this.foods.push(this.foodName);
@@ -17,6 +18,6 @@ export class AppComponent {
   }
   deleteFood () {
     this.foods.pop()
-   // this.food=[]
+   // this.food.pop=[]
   }
   }
