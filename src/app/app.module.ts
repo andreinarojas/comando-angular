@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MiComponenteComponent } from './mi-componente/mi-componente.component';
 import { LetrasPipe } from './letras.pipe';
+import {EquipoService} from './equipo.service'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { LetrasPipe } from './letras.pipe';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EquipoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

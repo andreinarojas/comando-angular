@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EquipoService } from '../equipo.service';
+
 
 @Component({
   selector: 'app-mi-componente',
@@ -6,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mi-componente.component.css']
 })
 export class MiComponenteComponent implements OnInit {
+  equipo:any [] = []; 
 
-  constructor() { }
+  constructor(private _servicio:EquipoService) {
+    this.equipo = _servicio.obtenerEquipo ();
+   }
 
   ngOnInit(): void {
   }
